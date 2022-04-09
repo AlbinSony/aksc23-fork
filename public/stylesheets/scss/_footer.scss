@@ -1,0 +1,106 @@
+@import "../theme";
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: $color8;
+    padding: 0 0 30px 0;
+    color: $color1;
+    font-size: 14px;
+}
+#footer .footer-top {
+    background: $color4;
+    border-top: 1px solid rgba($color: $color4, $alpha: 0.7);
+    border-bottom: 1px solid rgba($color: $color4, $alpha: 0.7);
+    padding: 60px 0 30px 0;
+}
+#footer .footer-top .footer-info {
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-info h3 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: $color1;
+}
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: $color7;
+    color: $color1;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#footer .footer-top .social-links a:hover {
+    background: $color3;
+    color: $color1;
+    text-decoration: none;
+}
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: $color1;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #4b9ef1;
+    font-size: 18px;
+    line-height: 1;
+}
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+    color: $color1;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+#footer .footer-top .footer-links ul a:hover {
+    color: $color3;
+}
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact p {
+    line-height: 26px;
+}
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+#footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: $color1;
+}
