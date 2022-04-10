@@ -39,22 +39,22 @@
 
   <link rel='stylesheet' href='/stylesheets/style.css' />
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   {{#if Error}}
   {{{body}}}
   {{else}}
-  <div id="preloader">
-    <div id="status">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
-    </div>
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
   </div>
   <script>
     const body = document.querySelector('html');
@@ -112,26 +112,15 @@
       window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
     }
 
-    window.addEventListener('load', () => {
+    $(document).ready(function () {
       const body = document.querySelector('html');
-      const preload = document.querySelector('#preloader');
-      setTimeout(function () {   //  call a 3s setTimeout when the loop is called
-        preload.style.opacity = 0;
-        body.style.overflowY = "auto";
+      // Fakes the loading setting a timeout
+      setTimeout(function () {
+        $('body').addClass('loaded');
         enableScroll()
-        setInterval(function () {
-          preload.style.display = "none";
-        }, 2000)
-      }, 4500)
-    });
+        body.style.overflowY = "auto";
+      }, 3500);
 
-    window.addEventListener('load', () => {
-      setTimeout(function () {   //  call a 3s setTimeout when the loop is called
-        preload.style.opacity = 0;
-        body.style.overflowY = "auto";
-        enableScroll()
-        preload.style.display = "none";
-      }, 1000)
     });
   </script>
 
@@ -148,13 +137,13 @@
           <li><a href="/">Home</a></li>
           {{#each links}}
           <li>
-              {{#if bc_link}}
-              <a href="{{this.bc_link}}">
-                {{this.bc_page}}
-              </a>
-              {{else}}
-                {{this.bc_page}}
-              {{/if}}
+            {{#if bc_link}}
+            <a href="{{this.bc_link}}">
+              {{this.bc_page}}
+            </a>
+            {{else}}
+            {{this.bc_page}}
+            {{/if}}
           </li>
           {{/each}}
         </ol>
