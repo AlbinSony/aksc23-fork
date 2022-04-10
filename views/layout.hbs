@@ -20,7 +20,7 @@
   <meta name="twitter:title" content="IEEE LINK" />
   <meta name="twitter:description" content="Local Integrated Network of Kerala IEEE Students" />
   <meta name="twitter:url" content="https://ieee-link.org" />
-  <meta name="twitter:image" content="" />
+  <meta name="twitter:image" content="/assets/Icons/IEEE_LINK-Icon.png" />
 
   <!-- Favicons -->
   <link href="/assets/Icons/IEEE_LINK-Icon.png" rel="icon">
@@ -120,15 +120,13 @@
       window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
     }
 
-    $(document).ready(function () {
+    window.addEventListener('load', () => {
       const body = document.querySelector('html');
-      // Fakes the loading setting a timeout
-      setTimeout(function () {
+      setTimeout(function () {   //  call a 3s setTimeout when the loop is called
         $('body').addClass('loaded');
         enableScroll()
         body.style.overflowY = "auto";
-      }, 3500);
-
+      }, 500)
     });
   </script>
 
