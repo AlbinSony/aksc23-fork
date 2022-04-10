@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>IEEE LINK - Local Integrated Network of Kerala</title>
+  <title>{{title}}</title>
 
   <meta content="og:Student Community of IEEE Kerala Section" name="description">
   <meta content="og:ieeelink ieee link" name="keywords">
 
-  <meta property="og:title" content="IEEE LINK - Local Integrated Network of Kerala">
+  <meta property="og:title" content="{{title}}">
   <meta property="og:description" content="Student Community of IEEE Kerala Section">
   <meta property="og:image" content="/assets/Icons/IEEE_LINK-Icon.png">
 
@@ -136,7 +136,37 @@
   </script>
 
   {{>header}}
-  {{{body}}}
+
+  <main id="main">
+    {{#if breadcrumbs}}
+
+    {{#with breadcrumbs}}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="/">Home</a></li>
+          {{#each links}}
+          <li>
+              {{#if bc_links}}
+              <a href="{{this.bc_link}}">
+                {{this.bc_page}}
+              </a>
+              {{else}}
+                {{this.bc_page}}
+              {{/if}}
+          </li>
+          {{/each}}
+        </ol>
+        <h2>{{head}}</h2>
+      </div>
+    </section><!-- End Breadcrumbs -->
+    {{/with}}
+
+    {{/if}}
+
+    {{{body}}}
+  </main>
   {{>footer}}
   {{/if}}
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
