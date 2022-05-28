@@ -1,0 +1,69 @@
+#execom-training {
+    .head {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        h2 {
+            color: $color3;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 0;
+            padding: 0;
+            color: $color5;
+        }
+    }
+
+    padding-bottom: 60px;
+
+    .rqst {
+        width: 100%;
+        height: auto;
+        padding: 2.5rem;
+        // border-radius: 0.5rem;
+        background-color: #fff;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+        form {
+            color: $color4;
+
+            label {
+                color: rgba($color: $color4, $alpha: 0.8);
+            }
+
+            input,
+            select {
+                &:active,
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid $color3;
+                }
+            }
+
+            .form-section {
+                // margin: 5rem 0;
+                // background-color: rgba($color: $color4, $alpha: 0.05);
+
+                h2 {
+                    margin: 2rem;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    color: $color7;
+                }
+
+                .form-main-group {
+                    margin: 1rem 0;
+                }
+            }
+
+            option {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

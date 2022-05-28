@@ -120,4 +120,36 @@ router.get("/contact", function (req, res, next) {
     });
 });
 
+router.get("/execom-training", function (req, res, next) {
+    let pagename = "Execom Training";
+    let breadcrumbs = {
+        head: "Execom Training 2022",
+        links: [
+            {
+                bc_page: "Execom Training",
+            },
+        ],
+    };
+    res.render("requests/execom-training", {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
+router.get("/award-awareness", function (req, res, next) {
+    let pagename = "Aaward Awareness";
+    let breadcrumbs = {
+        head: "Aaward Awareness",
+        links: [
+            {
+                bc_page: "Aaward Awareness 22",
+            },
+        ],
+    };
+    res.render("pages/award-awareness", {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
 module.exports = router;

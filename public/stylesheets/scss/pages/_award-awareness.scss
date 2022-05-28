@@ -1,0 +1,95 @@
+#end-time {
+    .clock {
+        overflow: hidden;
+        color: $color1;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        .top-pane {
+            margin-bottom: 0px;
+            border-radius: 5px 5px 0px 0px;
+            background-color: $color5;
+            border: 0px;
+            transition: all 0.5s ease;
+            border: 1px solid $color1;
+        }
+
+        .bottom-pane {
+            margin-top: 0px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: $color3;
+            border: 0px;
+            transition: all 0.5s ease;
+        }
+
+        &:hover {
+            .top-pane {
+                background-color: $color1;
+                color: $color3;
+                border: 1px solid $color7;
+            }
+
+            .bottom-pane {
+                background-color: $color7;
+            }
+        }
+    }
+
+    .col-md-12 {
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+        .num {
+            font-size: 100px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .num {
+            font-size: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .num {
+            font-size: 30px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .text {
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .text {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text {
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        body {
+            padding-top: 75px;
+        }
+    }
+
+    h1 {
+        padding-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            margin-bottom: 75px;
+            font-size: 100px;
+        }
+    }
+}
