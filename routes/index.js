@@ -149,7 +149,7 @@ router.get("/md-session-request", function (req, res, next) {
     };
     res.render("pages/md-session", {
         title: `${pagename} | IEEE LINK`,
-        date_min: `${functionHelper.addOneWeek(new Date())}`,
+        date_min: `${functionHelper.addTwoWeek(new Date())}`,
         breadcrumbs,
     });
 });
