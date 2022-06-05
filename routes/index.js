@@ -120,4 +120,38 @@ router.get("/contact", function (req, res, next) {
     });
 });
 
+router.get("/execom-training", function (req, res, next) {
+    let pagename = "Execom Training";
+    let breadcrumbs = {
+        head: "Execom Training Request",
+        links: [
+            {
+                bc_page: "Execom Training",
+            },
+        ],
+    };
+    res.render("pages/execom-training", {
+        title: `${pagename} | IEEE LINK`,
+        date_min: `${functionHelper.addOneWeek(new Date())}`,
+        breadcrumbs,
+    });
+});
+
+router.get("/md-session-request", function (req, res, next) {
+    let pagename = "MD Session";
+    let breadcrumbs = {
+        head: "MD Session Request",
+        links: [
+            {
+                bc_page: "MD Session",
+            },
+        ],
+    };
+    res.render("pages/md-session", {
+        title: `${pagename} | IEEE LINK`,
+        date_min: `${functionHelper.addOneWeek(new Date())}`,
+        breadcrumbs,
+    });
+});
+
 module.exports = router;
