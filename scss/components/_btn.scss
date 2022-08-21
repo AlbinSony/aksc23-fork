@@ -1,0 +1,17 @@
+.btn{
+    background-color: $color5;
+    border: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+
+    color: $color1;
+
+    &:active, &:focus{
+        box-shadow: none;
+    }
+
+    &:hover{
+        color: $color1;
+        background-color: $color3;
+    }
+}

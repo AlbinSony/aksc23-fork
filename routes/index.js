@@ -152,6 +152,43 @@ router.get("/award-awareness", function (req, res, next) {
     });
 });
 
+router.get("/opportunities", function (req, res, next) {
+    let pagename = "Opportunities";
+    let breadcrumbs = {
+        head: "Collab With IEEE LINK",
+        links: [
+            {
+                bc_page: "Opportunities",
+            },
+        ],
+    };
+    res.render("pages/opportunities", {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
+router.get("/opportunities/:event", function (req, res, next) {
+    let pagename = `Opportunities`;
+    let event = req.params.event;
+    let breadcrumbs = {
+        head: `${event.toUpperCase()}`,
+        links: [
+            {
+                bc_link: "/opportunities",
+                bc_page: "Opportunities",
+            },
+            {
+                bc_page: `${event.toUpperCase()}`,
+            },
+        ],
+    };
+    res.render(`opportunities/${event}`, {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
 router.get("/irl", function (req, res, next) {
     let pagename = "IRL";
     let breadcrumbs = {
