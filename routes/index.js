@@ -152,4 +152,20 @@ router.get("/award-awareness", function (req, res, next) {
     });
 });
 
+router.get("/irl", function (req, res, next) {
+    let pagename = "IRL";
+    let breadcrumbs = {
+        head: "IRL",
+        links: [
+            {
+                bc_page: "IRL",
+            },
+        ],
+    };
+    res.render("pages/irl", {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
 module.exports = router;

@@ -11,10 +11,12 @@ html {
         -webkit-box-align: inset 0 0 6px rgba($color: $color4, $alpha: 0.3);
         background-color: #f5f5f5;
     }
+
     &::-webkit-scrollbar {
         width: 5px;
         background-color: #f5f5f5;
     }
+
     &::-webkit-scrollbar-thumb {
         background-color: $color4;
     }
@@ -48,13 +50,14 @@ h6 {
 }
 
 section {
-    padding: 55px 0;
+    padding: 2px 0;
     overflow: hidden;
 }
 
 .section-title {
     padding-bottom: 20px;
 }
+
 .section-title h2 {
     font-size: 14px;
     font-weight: 500;
@@ -66,6 +69,7 @@ section {
     color: #aaaaaa;
     font-family: "Poppins", sans-serif;
 }
+
 .section-title h2::after {
     content: "";
     width: 120px;
@@ -74,6 +78,7 @@ section {
     background: $color3;
     margin: 4px 10px;
 }
+
 .section-title p {
     margin: 0;
     margin: 0;
@@ -93,11 +98,13 @@ section {
     border-bottom: 1px solid #ededed;
     margin-bottom: 40px;
 }
+
 .breadcrumbs h2 {
     font-size: 28px;
     font-weight: 700;
     color: $color4;
 }
+
 .breadcrumbs ol {
     display: flex;
     flex-wrap: wrap;
@@ -106,10 +113,12 @@ section {
     margin: 0;
     font-size: 14px;
 }
-.breadcrumbs ol li + li {
+
+.breadcrumbs ol li+li {
     padding-left: 10px;
 }
-.breadcrumbs ol li + li::before {
+
+.breadcrumbs ol li+li::before {
     display: inline-block;
     padding-right: 10px;
     color: #6e6e6e;
@@ -127,6 +136,7 @@ section {
     z-index: 998;
     overflow: hidden;
 }
+
 .no-js #loader-wrapper {
     display: none;
 }
@@ -146,6 +156,7 @@ section {
     animation: spin 1.7s linear infinite;
     z-index: 998;
 }
+
 #loader:before {
     content: "";
     position: absolute;
@@ -159,6 +170,7 @@ section {
     -webkit-animation: spin-reverse 0.6s linear infinite;
     animation: spin-reverse 0.6s linear infinite;
 }
+
 #loader:after {
     content: "";
     position: absolute;
@@ -177,34 +189,42 @@ section {
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
     }
 }
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
+
 @-webkit-keyframes spin-reverse {
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(-360deg);
     }
 }
+
 @keyframes spin-reverse {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(-360deg);
     }
 }
+
 #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
@@ -244,16 +264,31 @@ section {
     transition: all 0.3s 1s ease-out;
 }
 
+.card {
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border: none;
 
-@import "./scss/navbar";
-@import "./scss/to-top";
+    .card-title{
+        font-weight: 600;
+    }
 
-@import "./scss/pages/index";
-@import "./scss/pages/team";
-@import "./scss/pages/events";
-@import "./scss/pages/contact";
-@import "./scss/pages/calander";
-@import "./scss/pages/execom-training";
-@import "./scss/pages/award-awareness";
+    .card-body{
+        padding: 2rem;
+    }
+}
 
-@import "./scss/footer";
+
+@import "./haf/navbar";
+@import "./components/to-top";
+
+@import "./pages/index";
+@import "./pages/team";
+@import "./pages/events";
+@import "./pages/contact";
+@import "./pages/calander";
+@import "./pages/execom-training";
+@import "./pages/award-awareness";
+@import "./pages/irl";
+
+@import "./haf/footer";
