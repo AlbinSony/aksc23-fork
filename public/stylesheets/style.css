@@ -2400,7 +2400,7 @@ section {
   overflow: hidden;
 }
 #opportunities .entry .entry-body {
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   margin-bottom: 0rem;
   padding-bottom: 0rem;
 }
@@ -2465,8 +2465,8 @@ section {
   margin-top: 1.5rem;
   font-weight: 500;
 }
-#opportunities .entry .entry-body .buttons {
-  padding: 1rem 0rem;
+#opportunities .entry .entry-body h5 {
+  font-style: italic;
 }
 #opportunities .entry .entry-body .buttons a {
   cursor: pointer;
