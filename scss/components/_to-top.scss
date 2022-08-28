@@ -14,15 +14,18 @@
     border-radius: 4px;
     transition: all 0.4s;
 }
+
 .back-to-top i {
     font-size: 28px;
     color: #fff;
     line-height: 0;
 }
+
 .back-to-top:hover {
     background: $color6;
     color: #fff;
 }
+
 .back-to-top.active {
     visibility: visible;
     opacity: 1;

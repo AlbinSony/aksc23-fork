@@ -1,0 +1,60 @@
+#irl {
+    .section-title {
+        position: relative;
+
+        h2::after {
+            content: "";
+            position: absolute;
+            transform: translateY(-250%);
+            width: 120px;
+            height: 1px;
+            display: inline-block;
+            background: $color3;
+            margin: 4px 10px;
+        }
+    }
+
+.card {
+    .card-body {
+        .buttons {
+            padding: 1rem 0rem;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                cursor: pointer;
+                width: auto;
+                border: none;
+                border-radius: 0.5rem;
+                margin: 0.5rem 0rem;
+                padding: 0.8rem 1rem;
+                box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+                background-color: $color5;
+                color: $color1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease;
+
+                &[data-button="play-store"]:hover {
+                    background-color: #01875f;
+                }
+
+                &[data-button="app-store"]:hover {
+                    background-color: #1b7ff4;
+                }
+
+                &:hover {
+                    background-color: $color3;
+                }
+
+                .bi {
+                    height: 1.2rem;
+                    fill: $color1;
+                    margin-right: 0.75rem;
+                }
+            }
+        }
+    }
+}
+}

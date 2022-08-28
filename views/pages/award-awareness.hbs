@@ -1,0 +1,274 @@
+<section id="end-time">
+    <div class="wrapper">
+        <div class=" container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-xs-6" data-aos="fade-up">
+                    <div class="clock">
+                        <div class="well top-pane">
+                            <div id="days" class="num">00</div>
+                        </div>
+                        <div class="well bottom-pane">
+                            <div id="days-text" class="text">Days</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6" data-aos="fade-up">
+                    <div class="clock">
+                        <div class="well top-pane">
+                            <div id="hours" class="num">00</div>
+                        </div>
+                        <div class="well bottom-pane">
+                            <div id="hours-text" class="text">Hours</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6" data-aos="fade-up">
+                    <div class=" clock">
+                        <div class="well top-pane">
+                            <div id="mins" class="num">00</div>
+                        </div>
+                        <div class="well bottom-pane">
+                            <div id="mins-text" class="text">Minutes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6" data-aos="fade-up">
+                    <div class="clock">
+                        <div class="well top-pane">
+                            <div id="secs" class="num">00</div>
+                        </div>
+                        <div class="well bottom-pane">
+                            <div id="secs-text" class="text">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="info" class="small"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    function timeLeft(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            total: t,
+            days: days,
+            hours: hours,
+            minutes: minutes,
+            seconds: seconds,
+        };
+    }
+
+    $(document).ready(function () {
+        var today = new Date();
+        var deadline = "May 20 " + today.getFullYear() + " 23:59:59";
+        if (today.getMonth() == 0 && today.getDate() == 1) {
+            deadline = "May 20 " + today.getFullYear() + " 23:59:59";
+        }
+
+        $("#header").hover(function () {
+            $(this).toggleClass("bluelight");
+        });
+
+        $(".clock").hover(function () {
+            $(this).toggleClass("bluelight");
+        });
+
+        var setClock = function (newyear) {
+            var timeinterval = setInterval(function () {
+                var t = timeLeft(newyear);
+                $("#days").text(t.days);
+                $("#hours").text(t.hours);
+                $("#mins").text(("0" + t.minutes).slice(-2));
+                $("#secs").text(("0" + t.seconds).slice(-2));
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                    var now = new Date();
+                    var yearStr = now.getFullYear().toString();
+                    $("#days").text("00");
+                    $("#days-text").text("--");
+                    $("#hours").text("00");
+                    $("#hours-text").text("--");
+                    $("#mins").text("00");
+                    $("#mins-text").text("--");
+                    $("#secs").text("00");
+                    $("#secs-text").text("--");
+                }
+            }, 1000);
+        };
+
+        setClock(deadline);
+    });
+
+</script>
+
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="row justify-content-center groups">
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>R 10 Educational Activities Award</h4>
+                    <p>The IEEE R10 Educational Activities (EA) Volunteer Award recognises IEEE members for their
+                        efforts and dedicated contributions to the promotion and implementation of educational
+                        activities in the following areas: R10 Educational Activities Outstanding Group Award and
+                        R10 Educational Activities Outstanding Volunteer Award.</p>
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfB-Yefgbz382wsvVzwJpmEkKAGcXjskJFQtKuZvkskGJP5SA/viewform">
+                        <div class="btn">Apply Now</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>IEEE R10 Outstanding Student Branch Award 2022</h4>
+                    <p>IEEE R10 recognises the role of the Student Branch in representing and fulfilling the needs
+                        of the members and the missions of R10 and IEEE. This award will help improve the
+                        membership, membership satisfaction and retention.</p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeNzSd8RFLLmw-FuWYM5nDaN6uftjhX-uGL9feTWXnW3htWzw/viewform?fbzx=-3288431395982972426">
+                        <div class="btn">Apply Now</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>IEEE R10 SAC Outstanding Volunteer Award 2022</h4>
+                    <p>The IEEE Region 10 Student Activities Committee (SAC) Outstanding Volunteer Award is given to
+                        an IEEE member of any grade, who has been organizing activities and providing motivation to
+                        the growth of student involvement for IEEE activities and events. These awards will help
+                        improve student member retention, recruiting new members and reporting from Student Branches
+                        & Sections.</p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSec6T5gzRGBSisSsVdmC9M4AVTuNSoiMy_klYgiQZqnLmA6pQ/viewform">
+                        <div class="btn">Apply Now</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>R10 WIE Outstanding Student Branch Affinity Group Award</h4>
+                    <p>The IEEE R10 WIE Student Branch Affinity Group of the Year Awards are given annually to WIE
+                        Student Branch Affinity Groups in R10 that have shown outstanding initiatives and
+                        performance in organizing activities. The awards are based on programs that took place from
+                        the period of 1 January to 31 December of the preceding year.</p>
+                    <a href="https://wie.ieeer10.org/2022-wie-ag-award/">
+                        <div class="btn">Apply Now</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>IEEE R10 WIE Outstanding Professional Volunteer Award</h4>
+                    <p>R10 WIE Professional Volunteer Award has been established to recognize individuals who have
+                        exhibited exemplary and substantive leadership of an extraordinary nature in implementing
+                        activities which support the visions of R10 WIE, as stated above, at the local, regional,
+                        national, and/or international level. The accomplishments of the candidate should be of
+                        “significant performance” and should have made a distinguishing contribution to R10 WIE.</p>
+                    <a href="https://wie.ieeer10.org/2022-wie-volunteer-award/">
+                        <div class="btn">Apply Now</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>IEEE R10 WIE Outstanding Student Volunteer Award</h4>
+                    <p>R10 WIE Student Volunteer Award has been established to recognize individuals who have
+                        exhibited exemplary and substantive leadership of an extraordinary nature in implementing
+                        activities which support the visions of R10 WIE, as stated above, at the local, regional,
+                        national, and/or international level. The accomplishments of the candidate should be of
+                        “significant performance” and should have made a distinguishing contribution to R10 WIE.</p>
+                    <a href="https://wie.ieeer10.org/2022-wie-volunteer-award/">
+                        <div class="btn">Apply Now</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr data-aos="zoom-in-up">
+
+        <div class="row justify-content-center groups">
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in-up">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>Larry K. Wilson Regional Student Activities Award</h4>
+                    <p>The purpose of this award is to recognize, annually, in each Region of the IEEE, the
+                        Student member most responsible for an extraordinary accomplishment associated with
+                        Student Activities.</p>
+
+                    <a href="https://students.ieee.org/larry-k-wilson-regional-student-activities-award/">
+                        <div class="btn">View Details</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4  mt-lg-0" data-aos="zoom-in-up"
+                onclick="location.href = 'https://students.ieee.org/ieee-regional-exemplary-student-branch-award/';">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>IEEE Regional Exemplary Student Branch Award</h4>
+                    <p>The purpose of this award is to provide public recognition of exemplary IEEE Student
+                        Branch operations. Awards will be presented to those Student Branches that are found to
+                        be operated in a manner consistent with the goals of IEEE.</p>
+
+                    <a href="https://students.ieee.org/ieee-regional-exemplary-student-branch-award/">
+                        <div class="btn">View Details</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in-up"
+                onclick="location.href = 'https://students.ieee.org/the-darrel-chong-student-activity-award/';">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>The Darrel Chong Student Activity Award</h4>
+                    <p>The purpose of this recognition system serves to change the mindset of our student
+                        groups, from being number-driven to becoming value-driven and to acknowledge exemplary
+                        student activities around the world. The goal is to improve the quality of activities
+                        and to foster knowledge sharing among students.</p>
+                    <a href="https://students.ieee.org/the-darrel-chong-student-activity-award/">
+                        <div class="btn">View Details</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 " data-aos="zoom-in-up"
+                onclick="location.href = 'https://students.ieee.org/ieee-outstanding-branch-counselor-and-branch-chapter-advisor-award/';">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-trophy"></i></div>
+                    <h4>IEEE Outstanding Branch Counselor and Branch Chapter Advisor Award</h4>
+                    <p>Aware of the unusual and dedicated efforts of Student Branch Counselors and Branch
+                        Chapter Advisors, the Regional and Technical Activities Boards sponsor a cash award to
+                        each of the approximately 20 outstanding Counselors and Advisors around the world.</p>
+                    <a
+                        href="https://students.ieee.org/ieee-outstanding-branch-counselor-and-branch-chapter-advisor-award/">
+                        <div class="btn">View Details</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Services Section -->
