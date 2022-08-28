@@ -123,33 +123,84 @@ router.get("/contact", function (req, res, next) {
 router.get("/execom-training", function (req, res, next) {
     let pagename = "Execom Training";
     let breadcrumbs = {
-        head: "Execom Training Request",
+        head: "Execom Training 2022",
         links: [
             {
                 bc_page: "Execom Training",
             },
         ],
     };
-    res.render("pages/execom-training", {
+    res.render("requests/execom-training", {
         title: `${pagename} | IEEE LINK`,
-        date_min: `${functionHelper.addOneWeek(new Date())}`,
         breadcrumbs,
     });
 });
 
-router.get("/md-session-request", function (req, res, next) {
-    let pagename = "MD Session";
+router.get("/award-awareness", function (req, res, next) {
+    let pagename = "Aaward Awareness";
     let breadcrumbs = {
-        head: "MD Session Request",
+        head: "Aaward Awareness",
         links: [
             {
-                bc_page: "MD Session",
+                bc_page: "Aaward Awareness 22",
             },
         ],
     };
-    res.render("pages/md-session", {
+    res.render("pages/award-awareness", {
         title: `${pagename} | IEEE LINK`,
-        date_min: `${functionHelper.addTwoWeek(new Date())}`,
+        breadcrumbs,
+    });
+});
+
+router.get("/opportunities", function (req, res, next) {
+    let pagename = "Opportunities";
+    let breadcrumbs = {
+        head: "Collab With IEEE LINK",
+        links: [
+            {
+                bc_page: "Opportunities",
+            },
+        ],
+    };
+    res.render("pages/opportunities", {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
+router.get("/opportunities/:event", function (req, res, next) {
+    let pagename = `Opportunities`;
+    let event = req.params.event;
+    let breadcrumbs = {
+        head: `${event.toUpperCase()}`,
+        links: [
+            {
+                bc_link: "/opportunities",
+                bc_page: "Opportunities",
+            },
+            {
+                bc_page: `${event.toUpperCase()}`,
+            },
+        ],
+    };
+    res.render(`opportunities/${event}`, {
+        title: `${pagename} | IEEE LINK`,
+        breadcrumbs,
+    });
+});
+
+router.get("/irl", function (req, res, next) {
+    let pagename = "IRL";
+    let breadcrumbs = {
+        head: "IRL",
+        links: [
+            {
+                bc_page: "IRL",
+            },
+        ],
+    };
+    res.render("pages/irl", {
+        title: `${pagename} | IEEE LINK`,
         breadcrumbs,
     });
 });
