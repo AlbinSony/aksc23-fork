@@ -44,26 +44,48 @@ router.get("/events", function (req, res, next) {
     });
 });
 
+
 router.get("/events/:hub", function (req, res, next) {
     let pagename = `Events`;
     let hub = req.params.hub;
-    let breadcrumbs = {
-        head: `${functionHelper.capitalizeFirstLetter(hub)} Hub`,
-        links: [
-            {
-                bc_link: "/events",
-                bc_page: "Events",
-            },
-            {
-                bc_page: `${hub}`,
-            },
-        ],
-    };
+    let breadcrumbs;
+    if(hub ==`link`){
+          breadcrumbs = {
+           head: `${functionHelper.capitalizeFirstLetter(hub)}`,
+           
+           links: [
+             {
+               bc_link: "/events",
+               bc_page: "Events",
+             },
+             {
+               bc_page: `${hub}`,
+             },
+           ],
+         };
+
+    }
+    else{
+         breadcrumbs = {
+           head: `${functionHelper.capitalizeFirstLetter(hub)} Hub`,
+           links: [
+             {
+               bc_link: "/events",
+               bc_page: "Events",
+             },
+             {
+               bc_page: `${hub}`,
+             },
+           ],
+         };
+    }
+   
     res.render(`events/${hub}/${hub}`, {
         title: `${pagename} | IEEE LINK`,
         breadcrumbs,
     });
 });
+
 
 router.get("/events/:hub/:event", function (req, res, next) {
     let pagename = `Events`;
@@ -87,6 +109,8 @@ router.get("/events/:hub/:event", function (req, res, next) {
         breadcrumbs,
     });
 });
+
+
 
 router.get("/calendar", function (req, res, next) {
     let pagename = "Calendar";
