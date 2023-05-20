@@ -161,19 +161,21 @@ router.get("/execom-training", function (req, res, next) {
 });
 
 router.get("/award-awareness", function (req, res, next) {
-    let pagename = "Aaward Awareness";
-    let breadcrumbs = {
-        head: "Aaward Awareness",
-        links: [
-            {
-                bc_page: "Aaward Awareness 22",
-            },
-        ],
-    };
-    res.render("pages/award-awareness", {
-        title: `${pagename} | IEEE LINK`,
-        breadcrumbs,
-    });
+    // let pagename = "Aaward Awareness";
+    // let breadcrumbs = {
+    //     head: "Aaward Awareness",
+    //     links: [
+    //         {
+    //             bc_page: "Aaward Awareness 22",
+    //         },
+    //     ],
+    // };
+    // res.render("pages/award-awareness", {
+    //     title: `${pagename} | IEEE LINK`,
+    //     breadcrumbs,
+    // });
+
+     res.redirect("https://ieeelink.github.io/award-awareness-blogs");
 });
 
 router.get("/opportunities", function (req, res, next) {
