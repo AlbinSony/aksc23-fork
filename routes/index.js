@@ -147,7 +147,7 @@ router.get("/contact", function (req, res, next) {
 router.get("/execom-training", function (req, res, next) {
     let pagename = "Execom Training";
     let breadcrumbs = {
-        head: "Execom Training 2022",
+        head: "Execom Training 2023",
         links: [
             {
                 bc_page: "Execom Training",
