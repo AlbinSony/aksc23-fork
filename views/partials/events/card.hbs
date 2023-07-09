@@ -1,0 +1,33 @@
+                <article class="entry" data-aos="fade-up">
+
+                    <div class="entry-img">
+                        <img src="{{image}}" alt="Mystifier" class="img-fluid">
+                    </div>
+
+                    <h2 class="entry-title">
+                        {{title}}
+                    </h2>
+
+                    <div class="entry-meta">
+                        <ul>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">IEEE
+                                    {{hub}}</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-calendar"></i> <a href="#"><time datetime="{{date}}"
+                                        >{{date}}</time></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="entry-content">
+                        <p>
+                            {{content}}
+                            
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        {{#if link}}
+                        <a href="{{link}}">Read More</a>
+                        {{/if}}
+                    </div>
+
+                </article><!-- End blog entry -->
