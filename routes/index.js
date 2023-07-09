@@ -41,6 +41,7 @@ router.get("/events", function (req, res, next) {
     };
     res.render("events/events", {
         title: `${pagename} | IEEE LINK`,
+        eventList: eventList,
         breadcrumbs,
     });
 });
