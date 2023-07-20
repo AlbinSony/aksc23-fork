@@ -53,6 +53,37 @@ const eventList = {
             link: '/events/travancore/mystifier',
         },
         {
+            title: 'Travancore Hub Connect 2022',
+            date: '2022-04-16',
+            content:`IEEE Travancore Hub gives you another prodigious door that paves way to greater heights, Travancore Hub Connect. Let's connect, collaborate and grow together.💫
+            THC 2022 welcomes all the Student Branches under Travancore Hub for SB collaborations along with Travancore Hub. For collaborations do share your event pitches with us. The best entries will be shortlisted.🥳🎊
+            `,
+            image: '/assets/images/events/travancore/THC22.webp',
+        },
+        {
+            title: '#2Day.com',
+            date: '2022-05-11',
+            content: `As part of the National Technology Day, IEEE TRAVANCORE HUB is proud to present to you #2DAY.COM, a Quiz Competition based on latest technologies and innovations.💫`,
+            image: '/assets/images/events/travancore/2daycom.webp',
+
+        },
+        {
+            title: 'Chairs Meet 2022',
+            date: '2022-05-14',
+            content: `IEEE Travancore Hub cordially invites you to the Travancore Hub Chairs' meet 2022 and make the event a great experience with your presence.
+            We welcome all the SB Chairs under Travancore Hub to attend the meeting along with a representative from the SB Execom, preferably LINK Representative/Secretary. In the world of online meetings, we are excited to meet you in person.
+
+            Teamwork begins by building trust, so suit up guys!
+            `,
+            image: '/assets/images/events/travancore/chm22.webp',
+        },
+        {
+            title: 'Travancore Hub Meet 2022',
+            date: '2022-12-10',
+            content:"Travancore Hub meet (THM) is one of the most anticipated yearly events of the Travancore Hub. The event is a platform for the Students to interact with the Hub Execom. Usually jam-packed with events, the event is a fun-filled day with a lot of activities and games. The host of this event was College of Engineering, Trivandrum. The event spanned for 2 days. It involved sessions on web mining, Civil services, a meme making competition,tals about setting sail across the seven seas and living on frozen oceans by Vishnu Nandan , an amazing lantern night and much more.",
+            image: '/assets/images/events/travancore/thm22.webp',
+        },
+        {
             title: 'Branch Counselors and Chapter Advisors Meet 2023',
             date: '2023-03-08',
             content: ' Branch Counselors and Chapter Advisors Congress 2023, a networking platform for the Branch Counselors and Advisors. Besides providing a platform for networking, the event also embodies plans proposed by the SAC for the upcoming year, Membership Development Sessions, Guideline Sessions and many more.',
