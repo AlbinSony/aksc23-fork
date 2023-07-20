@@ -1,7 +1,25 @@
 /**
- * @module eventList
- * @description Contains the list of events conducted by the hubs
- * @property {Array} eventList.TravancoreHubEvents - Contains the list of events conducted by the Travancore Hub
+ * @typedef PropertiesHash
+ * @type {object}
+ * @property {string} title - Event title.
+ * @property {string} date - Event date.
+ * @property {string} content - Event content.
+ * @property {string} image - Event image.
+ * @property {string} link - Event link.
+ */
+
+/**
+ * @typedef EventList
+ * @type {object}
+ * @property {PropertiesHash[]} TravancoreHubEvents - List of events conducted by Travancore Hub.
+ */
+
+/**
+ * @type {EventList}
+ * @description List of events
+ * @example
+ * const eventList = require('./helpers/eventList');
+ * console.log(eventList.TravancoreHubEvents);
  */
 const eventList = {
     TravancoreHubEvents:[
