@@ -721,6 +721,7 @@ section {
   background-image: url('/assets/images/parallax/Background7.png');
   transform:translateZ(-4px) scale(2.5);
 }
+
 #keyart-2 {
   background-image: url('/assets/images/parallax/Background6.png');
   transform:translateZ(-3px) scale(1.8);
@@ -729,18 +730,23 @@ section {
   background-image: url('/assets/images/parallax/Background5.png');
   transform:translateZ(-2px) scale(1.6);
 }
+#keyart-3-5{
+  top:40%;
+  left:30%;
+  transform:translateZ(-1.5px) scale(1.2);
+}
 #keyart-4 {
   background-image: url('/assets/images/parallax/Background4.png');
   transform:translateZ(-1px) scale(1.35);
 }
-#keyart-6 {
+#keyart-5 {
   background-image: url('/assets/images/parallax/Background2.png');
   transform:translateZ(0px) scale(1);
 }
 
 
 .hero h2{
-  background: linear-gradient(120deg, #aa185c, #ffc700);
+  background: linear-gradient(-160deg, #ffffff, #ffc700);
   font-family: Krona One;
   font-size: 12vw;
   font-style: normal;
@@ -765,8 +771,17 @@ section {
 }
 .hero h3{
   align-self: center;
-  color:#efefefaa;
+  color:#efefefe8;
   font-size: clamp(1rem,2vw,3rem);
+}
+.content{
+  width: 100vw;
+  min-height: 100vh;
+  position:absolute;
+  left:0;
+  top:120vh;
+  background-color: white;
+  transform:translateZ(0px) scale(1);
 }
 
 
