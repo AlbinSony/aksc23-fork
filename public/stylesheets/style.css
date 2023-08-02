@@ -825,6 +825,13 @@ h1:hover span {
   background-color: white;
   transform:translateZ(0px) scale(1);
 }
+@media screen and (max-width:400px) {
+  #keyart-3-5{
+    top:40%;
+    left:10%;
+    transform:translateZ(-1.5px) scale(1.5);
+  }
+}
 
 
 /*--------------------------------------------------------------
