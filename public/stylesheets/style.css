@@ -64,7 +64,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #1089FF;
+  background:linear-gradient(to right, #801336, #510A32, #2D142C) ;
   margin: 4px 10px;
 }
 
@@ -75,8 +75,41 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  color: #1f2b38;
+  color:#2D142C;
 }
+
+
+
+
+h1 {
+  font-size: 2em;
+  max-width: 75vw;
+  color: #510A32;
+}
+
+h1 span {
+  font-size: 36px;
+  background-image: linear-gradient(transparent calc(65% - 5px), darken(black, 15%) 5px);
+  background-size: 0;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+}
+
+h1:hover span {
+  background-size: 100%;
+}
+
+  
+
+
+
+/* Additional media queries and responsive styles can be added as needed for other screen sizes */
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -171,7 +204,6 @@ section {
   font-weight: 800;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  border-left: 8px solid #1089FF;
 }
 #header .logo h1 p {
   text-transform: none;
@@ -488,36 +520,46 @@ section {
 }
 
 .btn {
-  background-color: #4b9ef1;
-  border: none;
-  border-radius: 0.25rem;
+  position: relative;
+  font-size: 1rem;
+  background: linear-gradient(to right, #801336, #510A32, #2D142C);
+  color: #fff;
+  border-radius: 0.4rem;
+  font-weight: 400;
+  padding: 0.55rem 1.5rem;
   transition: all 0.3s ease;
-  color: #fffafa;
 }
-.btn:active, .btn:focus {
-  box-shadow: none;
-}
-.btn:hover {
-  color: #fffafa;
-  background-color: #1089FF;
-}
-
-.btn-closed {
-  cursor: pointer;
-  width: auto;
-  border: none;
+.btn ::after {
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 0.4rem;
+  padding: 0.15rem;
+  background: linear-gradient(to right, #801336, #510A32, #2D142C);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
   border-radius: 0.5rem;
-  margin: 0.5rem 0rem;
-  padding: 0.8rem 1rem;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  background-color: rgba(31, 43, 56, 0.1);
-  color: #1f2b38;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(to right,  #801336, #510A32, #2D142C);
+  opacity: 0;
   transition: all 0.3s ease;
+}
+.btn:focus, .btn:active, .btn:hover {
+  color: #fff;
+  border-color: transparent;
+}
+.btn:hover::before {
+  opacity: 1;
+  z-index: -1;
 }
 
 /*--------------------------------------------------------------
@@ -806,82 +848,6 @@ section {
   font-size: 1rem;
 }
 
-.about .video-box {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-right: 1rem;
-  min-height: 300px;
-  position: relative;
-}
-
-.about .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#2491ff 50%, rgba(75, 158, 241, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.about .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  animation-delay: 0s;
-  animation: pulsate-btn 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(75, 158, 241, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.about .play-btn:hover::after {
-  border-left: 15px solid #1089FF;
-  transform: scale(20);
-}
-
-.about .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
 
 @media (max-width: 1024px) {
   .about .accordion-list {
@@ -2452,7 +2418,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #23374D;
+  background: #510A32;
   padding: 0 0 30px 0;
   color: #fffafa;
   font-size: 14px;
@@ -2460,7 +2426,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #1f2b38;
+  background: #2D142C;
   border-top: 1px solid rgba(31, 43, 56, 0.7);
   border-bottom: 1px solid rgba(31, 43, 56, 0.7);
   padding: 60px 0 30px 0;
