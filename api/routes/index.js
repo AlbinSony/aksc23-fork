@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
-var functionHelper = require("../helpers/functionsHelper");
-const eventList = require("../helpers/eventList");
+var functionHelper = require("../../helpers/functionsHelper");
+const eventList = require("../../helpers/eventList");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {

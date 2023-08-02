@@ -1,0 +1,7 @@
+
+
+const Auth={
+  register:async ()=>{
+
+  }
+}
