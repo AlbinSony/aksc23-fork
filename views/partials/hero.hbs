@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
     window.addEventListener("scroll", () => {
         let offset = window.pageYOffset;
         let amountScrolledByMouseWheel = offset - oldScroll;
-        maxClientHeight = Math.max(maxClientHeight, page.clientHeight);
+        maxClientHeight = page.clientHeight;
         page.scrollTop = offset * 1;
         // use raf to resize the page height
         requestAnimationFrame(() => {
