@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #1089FF;
+  color: #1089ff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -64,7 +64,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background:linear-gradient(to right, #801336, #510A32, #2D142C) ;
+  background: linear-gradient(to right, #801336, #510a32, #2d142c);
   margin: 4px 10px;
 }
 
@@ -75,21 +75,21 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  color:#2D142C;
+  color: #2d142c;
 }
-
-
-
 
 h1 {
   font-size: 2em;
   max-width: 75vw;
-  color: #510A32;
+  color: #510a32;
 }
 
 h1 span {
   font-size: 36px;
-  background-image: linear-gradient(transparent calc(65% - 5px), darken(black, 15%) 5px);
+  background-image: linear-gradient(
+    transparent calc(65% - 5px),
+    darken(black, 15%) 5px
+  );
   background-size: 0;
   background-repeat: no-repeat;
   display: inline;
@@ -100,16 +100,7 @@ h1:hover span {
   background-size: 100%;
 }
 
-  
-
-
-
 /* Additional media queries and responsive styles can be added as needed for other screen sizes */
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -121,7 +112,7 @@ h1:hover span {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1089FF;
+  background: #1089ff;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -155,7 +146,7 @@ h1:hover span {
 
 #topbar .contact-info i {
   font-style: normal;
-  color: #1089FF;
+  color: #1089ff;
 }
 
 #topbar .contact-info i a,
@@ -170,11 +161,11 @@ h1:hover span {
 }
 
 #topbar .contact-info i a:hover {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 #topbar .social-links a {
-  color: #E5E5E5;
+  color: #e5e5e5;
   line-height: 0;
   transition: 0.3s;
   margin-left: 10px;
@@ -278,12 +269,12 @@ h1:hover span {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #1089FF;
+  background: #1089ff;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -329,7 +320,7 @@ h1:hover span {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .navbar .dropdown:hover > ul {
@@ -424,7 +415,7 @@ h1:hover span {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .navbar-mobile .getstarted,
@@ -459,7 +450,7 @@ h1:hover span {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -476,7 +467,7 @@ h1:hover span {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1089FF;
+  background: #1089ff;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -515,14 +506,14 @@ h1:hover span {
   color: #1f2b38;
 }
 .card .card-body {
-  color: #23374D;
+  color: #23374d;
   padding: 2rem;
 }
 
 .btn {
   position: relative;
   font-size: 1rem;
-  background: linear-gradient(to right, #801336, #510A32, #2D142C);
+  background: linear-gradient(to right, #801336, #510a32, #2d142c);
   color: #fff;
   border-radius: 0.4rem;
   font-weight: 400;
@@ -537,7 +528,7 @@ h1:hover span {
   inset: 0;
   border-radius: 0.4rem;
   padding: 0.15rem;
-  background: linear-gradient(to right, #801336, #510A32, #2D142C);
+  background: linear-gradient(to right, #801336, #510a32, #2d142c);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -549,11 +540,13 @@ h1:hover span {
   height: 100%;
   inset: 0;
   border-radius: 0.5rem;
-  background-image: linear-gradient(to right,  #801336, #510A32, #2D142C);
+  background-image: linear-gradient(to right, #801336, #510a32, #2d142c);
   opacity: 0;
   transition: all 0.3s ease;
 }
-.btn:focus, .btn:active, .btn:hover {
+.btn:focus,
+.btn:active,
+.btn:hover {
   color: #fff;
   border-color: transparent;
 }
@@ -622,7 +615,7 @@ h1:hover span {
   margin: -2.5rem 0 0 -2.5rem;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #1089FF;
+  border-top-color: #1089ff;
   -webkit-animation: spin 1.7s linear infinite;
   animation: spin 1.7s linear infinite;
   z-index: 998;
@@ -651,7 +644,7 @@ h1:hover span {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #E5E5E5;
+  border-top-color: #e5e5e5;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
 }
@@ -731,70 +724,69 @@ h1:hover span {
 # Hero Section
 --------------------------------------------------------------*/
 .page {
-  width:100vw;
-  height:100vh;
-  perspective:3px;
+  width: 100vw;
+  height: 100vh;
+  perspective: 3px;
   perspective-origin: center center;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 #parallax {
   transform-style: preserve-3d;
-  height:120vh;
+  height: 120vh;
 }
 
 .keyart_layer {
-	background-position: bottom center;
-	background-size: cover;
-	background-repeat: repeat-x;
-	position: absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #keyart-0 {
-  background-image: url('/assets/images/parallax/Background3.png');
+  background-image: url("/assets/images/parallax/Background3.png");
   background-color: #fc6faf;
-  transform:translateZ(-5px) scale(3);
+  transform: translateZ(-5px) scale(3);
 }
 #keyart-1 {
-  background-image: url('/assets/images/parallax/Background7.png');
-  transform:translateZ(-4px) scale(2.5);
+  background-image: url("/assets/images/parallax/Background7.png");
+  transform: translateZ(-4px) scale(2.5);
 }
 
 #keyart-2 {
-  background-image: url('/assets/images/parallax/Background6.png');
-  transform:translateZ(-3px) scale(1.8);
+  background-image: url("/assets/images/parallax/Background6.png");
+  transform: translateZ(-3px) scale(1.8);
 }
 #keyart-3 {
-  background-image: url('/assets/images/parallax/Background5.png');
-  transform:translateZ(-2px) scale(1.6);
+  background-image: url("/assets/images/parallax/Background5.png");
+  transform: translateZ(-2px) scale(1.6);
 }
-#keyart-3-5{
-  top:40%;
-  left:30%;
-  transform:translateZ(-1.5px) scale(1.2);
+#keyart-3-5 {
+  top: 40%;
+  left: 30%;
+  transform: translateZ(-1.5px) scale(1.2);
 }
 #keyart-4 {
-  background-image: url('/assets/images/parallax/Background4.png');
-  transform:translateZ(-1px) scale(1.35);
+  background-image: url("/assets/images/parallax/Background4.png");
+  transform: translateZ(-1px) scale(1.35);
 }
 #keyart-5 {
-  background-image: url('/assets/images/parallax/Background2.png');
-  transform:translateZ(0px) scale(1);
+  background-image: url("/assets/images/parallax/Background2.png");
+  transform: translateZ(0px) scale(1);
 }
 
-
-.hero h2{
+.hero h2 {
   background: linear-gradient(-160deg, #ffffff, #ffc700);
   font-family: Krona One;
   font-size: 12vw;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
-  color:transparent;
+  color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -805,34 +797,262 @@ h1:hover span {
 }
 
 .hero h2:hover {
-  text-shadow:0px 0px 30px #ffffff67;
+  text-shadow: 0px 0px 30px #ffffff67;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.hero h3{
+.hero h3 {
   align-self: center;
-  color:#efefefe8;
-  font-size: clamp(1rem,2vw,3rem);
+  color: #efefefe8;
+  font-size: clamp(1rem, 2vw, 3rem);
 }
-.content{
+.content {
   width: 100vw;
   min-height: 100vh;
-  position:absolute;
-  left:0;
-  top:120vh;
+  position: absolute;
+  left: 0;
+  top: 120vh;
   background-color: white;
-  transform:translateZ(0px) scale(1);
+  transform: translateZ(0px) scale(1);
 }
-@media screen and (max-width:400px) {
-  #keyart-3-5{
-    top:40%;
-    left:10%;
-    transform:translateZ(-1.5px) scale(1.5);
+@media screen and (max-width: 400px) {
+  #keyart-3-5 {
+    top: 40%;
+    left: 10%;
+    transform: translateZ(-1.5px) scale(1.5);
   }
 }
 
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+/* CSS for the gradient border effect on card hover */
+
+#focus {
+  /* background-color: #e3e3e3; */
+}
+
+#focus .row {
+  padding: 0rem 4rem;
+}
+
+#focus .focus {
+  cursor: pointer;
+  position: relative;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+#focus .focus::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  opacity: 0;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  background: linear-gradient(to right, #ffc700, #ee4540, #801336);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: all 0.5s ease-in-out;
+}
+
+#focus .focus .text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#focus .focus .text .head {
+  position: relative;
+}
+
+#focus .focus .text .head h4 {
+  text-align: center;
+  font-weight: 700;
+  /* color: white; */
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#focus .focus .text .head h4:first-child {
+  position: absolute;
+  top: 0%;
+}
+
+#focus .focus .text .head h4:nth-child(2) {
+  opacity: 0;
+}
+
+#focus .focus .text .head h4:last-child {
+  position: absolute;
+  font-weight: 700;
+  top: 0;
+  opacity: 0;
+  background: linear-gradient(to right, #ffc700, #ee4540, #801336);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#focus .focus .text p {
+  text-align: justify;
+  transition: all 0.3s ease-in-out;
+}
+
+#focus .focus:hover .text .head h4:first-child {
+  opacity: 0;
+}
+
+#focus .focus:hover .text .head h4:last-child {
+  opacity: 1;
+}
+
+#focus .focus:hover .text p {
+  /* color: #fff; */
+}
+
+#focus .focus:hover::before {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Highlights
+--------------------------------------------------------------*/
+#highlight {
+  position: relative;
+}
+
+#highlight::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+}
+
+#highlight .highlight-text {
+  position: relative;
+  z-index: 2;
+}
+
+#highlight .highlight-text p {
+  text-align: justify;
+}
+
+#highlight .highlight-text ul {
+  margin: 2rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+#highlight .highlight-text ul li {
+  margin: 1rem;
+}
+
+#highlight .highlight-text .highlight-btn {
+  margin: 3rem 0rem;
+}
+
+#highlight .highlight-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+#highlight .highlight-img .img {
+  margin: 5% 0rem;
+  width: 70%;
+  border-radius: 0.5rem;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+}
+
+#highlight .highlight-img .img img {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+#highlight .highlight-img .img::before {
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffc700, #ee4540, #801336);
+  filter: blur(0.5rem);
+  opacity: 0.2;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+
+#highlight .highlight-img .img:hover::before {
+  opacity: 1;
+}
+
+.event-detail {
+  margin: 0.5rem 0rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.event-detail .the-detail {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0.5rem;
+  margin-bottom: 0rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 1.5rem rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(0.5rem);
+  border: 0.05rem solid rgba(0, 0, 0, 0.1);
+}
+
+.event-detail .the-detail i {
+  font-size: 0.9rem;
+  color: #000;
+  margin-right: 1rem;
+}
+
+.event-detail .the-detail h3 {
+  transform: translateY(25%);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.event-detail .the-detail:first-child {
+  margin-left: 0;
+}
+
+.event-detail .the-detail:last-child {
+  margin-right: 0;
+}
 
 /*--------------------------------------------------------------
 # About
@@ -854,7 +1074,6 @@ h1:hover span {
   line-height: 1.7rem;
   font-size: 1rem;
 }
-
 
 @media (max-width: 1024px) {
   .about .accordion-list {
@@ -908,7 +1127,7 @@ h1:hover span {
 .counts .count-box i {
   display: block;
   font-size: 30px;
-  color: #1089FF;
+  color: #1089ff;
   float: left;
   line-height: 0;
 }
@@ -946,7 +1165,8 @@ h1:hover span {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(7, 11, 26, 0.6), rgba(0, 23, 63, 0.5)), url("/assets/images/parallax.jpg") fixed center center;
+  background: linear-gradient(rgba(7, 11, 26, 0.6), rgba(0, 23, 63, 0.5)),
+    url("/assets/images/parallax.jpg") fixed center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1098,12 +1318,12 @@ h1:hover span {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .portfolio #portfolio-flters li.filter-active::before,
 .portfolio #portfolio-flters li.filter-active::after {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .portfolio .portfolio-item {
@@ -1214,16 +1434,22 @@ h1:hover span {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1089FF;
+  border: 1px solid #1089ff;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1089FF;
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #1089ff;
 }
 
 .portfolio-details .portfolio-info {
@@ -1284,7 +1510,7 @@ h1:hover span {
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #1089FF;
+  font-family: #1089ff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1315,7 +1541,7 @@ h1:hover span {
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -1431,7 +1657,7 @@ h1:hover span {
 }
 
 .team .member .social a:hover {
-  background: #1089FF;
+  background: #1089ff;
 }
 
 .team .member .social i {
@@ -1573,7 +1799,7 @@ h1:hover span {
   transition: all 0.3s ease;
 }
 .blog .entry .read-more a:hover {
-  background: #1089FF;
+  background: #1089ff;
 }
 .blog .entry .entry-footer {
   padding-top: 10px;
@@ -1584,7 +1810,7 @@ h1:hover span {
   transition: 0.3s;
 }
 .blog .entry .entry-footer a:hover {
-  color: #1089FF;
+  color: #1089ff;
 }
 .blog .entry .entry-footer .cats {
   list-style: none;
@@ -1690,7 +1916,7 @@ h1:hover span {
   padding: 3px 10px;
   position: relative;
 }
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -1829,7 +2055,7 @@ h1:hover span {
 
 .contact .info i {
   font-size: 20px;
-  color: #1089FF;
+  color: #1089ff;
   float: left;
   width: 44px;
   height: 44px;
@@ -1864,7 +2090,7 @@ h1:hover span {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1089FF;
+  background: #1089ff;
   color: #fffafa;
 }
 
@@ -1934,8 +2160,8 @@ h1:hover span {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #1089FF;
+.contact .php-email-form button[type="submit"] {
+  background: #1089ff;
   border: 0;
   padding: 10px 24px;
   color: #fffafa;
@@ -1943,7 +2169,7 @@ h1:hover span {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #2491ff;
 }
 
@@ -2000,7 +2226,7 @@ h1:hover span {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #1089FF;
+  background-color: #1089ff;
   content: "";
   top: 25px;
   right: 26px;
@@ -2032,7 +2258,7 @@ h1:hover span {
   transition-duration: 500ms;
   width: 30px;
   height: 30px;
-  background-color: #1089FF;
+  background-color: #1089ff;
   flex: 0 0 30px;
   text-align: center;
   max-width: 30px;
@@ -2065,7 +2291,7 @@ h1:hover span {
   background-color: #020710;
 }
 .single-timeline-area .single-timeline-content:hover .timeline-text h4 {
-  color: #1089FF;
+  color: #1089ff;
 }
 .single-timeline-area .event-end {
   opacity: 0.8;
@@ -2075,7 +2301,7 @@ h1:hover span {
   background-color: #020710;
 }
 .single-timeline-area .event-end .timeline-text h4 {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 .back-to-top {
@@ -2085,7 +2311,7 @@ h1:hover span {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1089FF;
+  background: #1089ff;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -2099,7 +2325,7 @@ h1:hover span {
 }
 
 .back-to-top:hover {
-  background: #1089FF;
+  background: #1089ff;
   color: #fff;
 }
 
@@ -2131,7 +2357,7 @@ h1:hover span {
   width: 100%;
 }
 #execom-training .head h2 {
-  color: #1089FF;
+  color: #1089ff;
   font-weight: 700;
 }
 #execom-training .head p {
@@ -2152,11 +2378,12 @@ h1:hover span {
 #execom-training .rqst form label {
   color: rgba(31, 43, 56, 0.8);
 }
-#execom-training .rqst form input:active, #execom-training .rqst form input:focus,
+#execom-training .rqst form input:active,
+#execom-training .rqst form input:focus,
 #execom-training .rqst form select:active,
 #execom-training .rqst form select:focus {
   box-shadow: none;
-  border: 1px solid #1089FF;
+  border: 1px solid #1089ff;
 }
 #execom-training .rqst form .form-section h2 {
   margin: 2rem;
@@ -2188,13 +2415,13 @@ h1:hover span {
 #end-time .clock .bottom-pane {
   margin-top: 0px;
   border-radius: 0px 0px 5px 5px;
-  background-color: #1089FF;
+  background-color: #1089ff;
   border: 0px;
   transition: all 0.5s ease;
 }
 #end-time .clock:hover .top-pane {
   background-color: #fffafa;
-  color: #1089FF;
+  color: #1089ff;
   border: 1px solid #29435f;
 }
 #end-time .clock:hover .bottom-pane {
@@ -2259,7 +2486,7 @@ h1:hover span {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #1089FF;
+  background: #1089ff;
   margin: 4px 10px;
 }
 #irl .card .card-body .buttons {
@@ -2282,14 +2509,14 @@ h1:hover span {
   align-items: center;
   transition: all 0.3s ease;
 }
-#irl .card .card-body .buttons a[data-button=play-store]:hover {
+#irl .card .card-body .buttons a[data-button="play-store"]:hover {
   background-color: #01875f;
 }
-#irl .card .card-body .buttons a[data-button=app-store]:hover {
+#irl .card .card-body .buttons a[data-button="app-store"]:hover {
   background-color: #1b7ff4;
 }
 #irl .card .card-body .buttons a:hover {
-  background-color: #1089FF;
+  background-color: #1089ff;
 }
 #irl .card .card-body .buttons a .bi {
   height: 1.2rem;
@@ -2361,7 +2588,7 @@ h1:hover span {
 #opportunities .entry .entry-body .content p {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
-  color: #23374D;
+  color: #23374d;
   text-align: justify;
 }
 #opportunities .entry .entry-body .content p:last-child {
@@ -2391,7 +2618,7 @@ h1:hover span {
   transition: all 0.3s ease;
 }
 #opportunities .entry .entry-body .buttons a:hover {
-  background-color: #1089FF;
+  background-color: #1089ff;
 }
 #opportunities .entry .entry-body .buttons a .bi {
   height: 1.5rem;
@@ -2413,7 +2640,7 @@ h1:hover span {
   transition: 0.3s;
 }
 #opportunities .entry .footer a:hover {
-  color: #1089FF;
+  color: #1089ff;
 }
 #opportunities .entry .footer i {
   font-size: 1.5rem;
@@ -2425,7 +2652,7 @@ h1:hover span {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #510A32;
+  background: #510a32;
   padding: 0 0 30px 0;
   color: #fffafa;
   font-size: 14px;
@@ -2433,7 +2660,7 @@ h1:hover span {
 }
 
 #footer .footer-top {
-  background: #2D142C;
+  background: #2d142c;
   border-top: 1px solid rgba(31, 43, 56, 0.7);
   border-bottom: 1px solid rgba(31, 43, 56, 0.7);
   padding: 60px 0 30px 0;
@@ -2475,7 +2702,7 @@ h1:hover span {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1089FF;
+  background: #1089ff;
   color: #fffafa;
   text-decoration: none;
 }
@@ -2524,7 +2751,7 @@ h1:hover span {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #1089FF;
+  color: #1089ff;
 }
 
 #footer .footer-top .footer-contact {
