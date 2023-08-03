@@ -1,0 +1,57 @@
+<div class="page">
+  <div class="keyart" id="parallax">
+    <div class="keyart_layer" id="keyart-9"></div>
+    <div class="keyart_layer" id="keyart-8"></div>
+    <div class="keyart_layer" id="keyart-6"></div>
+    <div class="keyart_layer" id="keyart-5"></div>
+    <div class="keyart_layer" id="keyart-4"></div>
+    <div class="keyart_layer hero" data-aos="fade-up" id="keyart-3-5">
+
+      <div>
+        <h2>
+          AKSC'23
+        </h2>
+        <h3>
+          All Kerala Students' Congress -2023
+        </h3>
+      </div>
+
+    </div>
+    <div class="keyart_layer" id="keyart-3"></div>
+
+    <div class="keyart_layer" id="keyart-2"></div>
+
+    <div class="keyart_layer" id="keyart-1"></div>
+
+    <div class="keyart_layer" id="keyart-0"></div>
+  </div>
+
+</section>
+</div>
+<script type="text/javascript">
+var oldScroll = 0;
+var maxClientHeight = 0;
+window.addEventListener("load", () => {
+    const page = document.querySelector(".page");
+    window.addEventListener("scroll", () => {
+        let offset = window.pageYOffset;
+        let amountScrolledByMouseWheel = offset - oldScroll;
+        maxClientHeight = Math.max(maxClientHeight, page.clientHeight);
+        page.scrollTop = offset * 1;
+        // use raf to resize the page height
+        requestAnimationFrame(() => {
+            // on scroll down, shrink the page height by the scroll amount
+            if (window.pageYOffset > oldScroll) {
+                page.style.height = page.clientHeight - amountScrolledByMouseWheel + "px";
+            } else {
+                // on scroll up, increase the page height by the scroll amount
+                if (page.clientHeight < maxClientHeight) {
+                    page.style.height = page.clientHeight - amountScrolledByMouseWheel + "px";
+                }
+            }
+            oldScroll = window.pageYOffset;
+            
+        });
+    });
+});
+</script>
