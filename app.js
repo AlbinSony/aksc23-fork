@@ -8,7 +8,7 @@ var session = require('express-session')
 var passport = require('passport')
 var indexRouter = require('./api/routes/index');
 var connect = require('./db/db')
-const MongoStore =require('connect-mongo')
+const MongoStore = require('connect-mongo')
 //var initializePassport =require('./api/auth/passport-config')
 //var User=require('./api/models/users')
 
@@ -36,12 +36,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
     secret: process.env.SESSION_SECRET,
     cookie: {maxAge: parseInt(process.env.SESSION_MAX_AGE)},
-    store: new MongoStore({
-        url: process.env.MONGO,
-        ttl:12*24*60*60,
-        autoRemove: true
+    resave: true,
+    store: MongoStore.create({
+        url: process.env.MONGO, ttl: 12 * 24 * 60 * 60, autoRemove: true
     }),
-    resave: false,
+
     saveUninitialized: false
 }))
 
