@@ -840,7 +840,7 @@ h1:hover span {
 
 
 #focus {
-  /* background-color: #18191d; */
+  /* background-color: #e3e3e3; */
 }
 
 #focus .row {
@@ -850,7 +850,7 @@ h1:hover span {
 #focus .focus {
   cursor: pointer;
   position: relative;
-  /* background-color: #111216; */
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
