@@ -7,7 +7,7 @@ const { engine } = require('express-handlebars');
 // var session = require('express-session')
 
 var indexRouter = require('./api/routes/index');
-var connect=require('./db/db')
+// var connect=require('./db/db')
 
 // var usersRouter = require('./routes/users');
 
@@ -36,7 +36,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-connect();
+// connect();
 
 // error handler
 app.use(function(err, req, res, next) {
