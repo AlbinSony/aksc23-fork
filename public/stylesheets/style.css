@@ -728,7 +728,7 @@ h1:hover span {
   height: 100vh;
   perspective: 3px;
   perspective-origin: center center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #parallax {
