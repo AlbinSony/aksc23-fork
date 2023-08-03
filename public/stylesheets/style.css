@@ -930,6 +930,9 @@ h1:hover span {
 /*--------------------------------------------------------------
 # Highlights
 --------------------------------------------------------------*/
+#highlight * {
+  transition : all 0.8s ease-in-out;
+}
 #highlight {
   position: relative;
 }
