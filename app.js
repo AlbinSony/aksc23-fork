@@ -8,7 +8,7 @@ var session = require('express-session')
 var passport = require('passport')
 var indexRouter = require('./api/routes/index');
 var connect = require('./db/db')
-const MongoStore =require('connect-mongo')(session)
+const MongoStore =require('connect-mongo')
 //var initializePassport =require('./api/auth/passport-config')
 //var User=require('./api/models/users')
 
