@@ -37,20 +37,10 @@ window.addEventListener("load", () => {
         let offset = window.pageYOffset;
         let amountScrolledByMouseWheel = offset - oldScroll;
         maxClientHeight = page.clientHeight;
-        page.scrollTop = offset * 1;
-        // use raf to resize the page height
+        page.scrollTop = offset * 2;
         requestAnimationFrame(() => {
-            // on scroll down, shrink the page height by the scroll amount
-            if (window.pageYOffset > oldScroll) {
-                page.style.height = page.clientHeight - amountScrolledByMouseWheel + "px";
-            } else {
-                // on scroll up, increase the page height by the scroll amount
-                if (page.clientHeight < maxClientHeight) {
-                    page.style.height = page.clientHeight - amountScrolledByMouseWheel + "px";
-                }
-            }
-            oldScroll = window.pageYOffset;
-            
+            // change height of the page
+            page.style.height = `calc(100vh - ${offset * 1.6}px)`;
         });
     });
 });
