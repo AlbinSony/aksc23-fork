@@ -183,8 +183,9 @@ h1:hover span {
   transition: all 0.5s;
   z-index: 500;
   transition: all 0.5s;
-  background: #fffafa;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0,0,0,0.3);
+
 }
 
 #header .logo h1 {
@@ -2652,28 +2653,20 @@ h1:hover span {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #510a32;
-  padding: 0 0 30px 0;
-  color: #fffafa;
-  font-size: 14px;
-  margin-top: 5rem;
+  width: 100%;
+  margin-top: auto;
+  background-color: #111216;
+  color: #fff;
 }
 
 #footer .footer-top {
-  background: #2d142c;
-  border-top: 1px solid rgba(31, 43, 56, 0.7);
-  border-bottom: 1px solid rgba(31, 43, 56, 0.7);
-  padding: 60px 0 30px 0;
-}
-
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  padding: 3rem 0rem;
+  padding-bottom: 1rem;
+  background: #18191d;
 }
 
 #footer .footer-top .footer-info h3 {
   font-size: 18px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
 }
@@ -2682,15 +2675,15 @@ h1:hover span {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #fffafa;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #29435f;
-  color: #fffafa;
+  background: #18191d;
+  color: #12c2e9;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -2702,15 +2695,15 @@ h1:hover span {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1089ff;
-  color: #fffafa;
+  background: #f64f59;
+  color: #12c2e9;
   text-decoration: none;
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  color: #fffafa;
+  color: #fff;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -2726,49 +2719,110 @@ h1:hover span {
   margin: 0;
 }
 
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #4b9ef1;
-  font-size: 18px;
+#footer .footer-top .footer-links i {
+  padding-right: 0.25rem;
+  font-size: 1rem;
   line-height: 1;
 }
 
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+#footer .footer-top .footer-links li {
+  padding: 0.5rem 0;
   display: flex;
   align-items: center;
 }
 
-#footer .footer-top .footer-links ul li:first-child {
+#footer .footer-top .footer-links li:first-child {
   padding-top: 0;
 }
 
-#footer .footer-top .footer-links ul a {
-  color: #fffafa;
+#footer .footer-top .footer-links a {
+  color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
-#footer .footer-top .footer-links ul a:hover {
-  color: #1089ff;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+#footer .footer-top .footer-links a:hover {
+  color: #fff;
 }
 
 #footer .footer-top .footer-contact p {
-  line-height: 26px;
-}
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #fffafa;
+  padding: 1rem 0rem;
+}
+
+#footer .credits .text {
+  padding: 1rem 0rem;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+#footer .credits .text a {
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#footer .credits .text a:hover {
+  font-weight: 600;
+}
+
+#footer .credits .social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+#footer .credits .social-links a {
+  background: linear-gradient(to right, #18191d, #18191d);
+  margin: 0rem 0.2rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  position: relative;
+  border-radius: 5rem;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .credits .social-links a .ico {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+}
+
+#footer .credits .social-links a:hover {
+  background: linear-gradient(to right, #12c2e9, #c371ed, #f64f59);
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  #footer .footer-top {
+      padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer .credits .text {
+      text-align: center;
+      margin: 0rem;
+      padding: 0.5rem 0rem;
+  }
+
+  #footer .credits .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem 0rem;
+  }
 }
