@@ -81,7 +81,7 @@ section {
 h1 {
   font-size: 2em;
   max-width: 75vw;
-  color: #510a32;
+  color: #e21d8d;
 }
 
 h1 span {
@@ -210,7 +210,7 @@ h1:hover span {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #1f2b38;
+  color: #f9f9f9;
   text-decoration: none;
 }
 
@@ -219,7 +219,13 @@ h1:hover span {
   margin: 0;
   max-height: 40px;
 }
+#navbar ul li a {
+  color: white;
+}
 
+#navbar ul li a:hover {
+  color: rgb(184, 184, 184);
+}
 
 /*--------------------------------------------------------------
   # Navigation Menu
@@ -511,7 +517,7 @@ h1:hover span {
 .btn {
   position: relative;
   font-size: 1rem;
-  background: linear-gradient(to right, #801336, #510a32, #2d142c);
+  background: linear-gradient(to right, hsl(341, 74%, 35%), hsl(326, 78%, 25%), hsl(302, 38%, 20%));
   color: #fff;
   border-radius: 0.4rem;
   font-weight: 400;
@@ -526,7 +532,7 @@ h1:hover span {
   inset: 0;
   border-radius: 0.4rem;
   padding: 0.15rem;
-  background: linear-gradient(to right, #801336, #510a32, #2d142c);
+  background:  linear-gradient(to right, hsl(341, 74%, 30%), hsl(326, 78%, 20%), hsl(302, 38%, 15%));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -538,7 +544,7 @@ h1:hover span {
   height: 100%;
   inset: 0;
   border-radius: 0.5rem;
-  background-image: linear-gradient(to right, #801336, #510a32, #2d142c);
+  background-image:  linear-gradient(to right, hsl(341, 74%, 35%), hsl(326, 78%, 25%), hsl(302, 38%, 20%));;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -839,7 +845,8 @@ h1:hover span {
 #focus .focus {
   cursor: pointer;
   position: relative;
-  background-color: #f4f4f4;
+  background-color: #1e1921;
+  box-shadow: 2px 2px 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -880,7 +887,7 @@ h1:hover span {
 #focus .focus .text .head h4 {
   text-align: center;
   font-weight: 700;
-  /* color: white; */
+  color: white;
   margin-bottom: 1.25rem;
   transition: all 0.3s ease-in-out;
 }
@@ -907,6 +914,7 @@ h1:hover span {
 #focus .focus .text p {
   text-align: justify;
   transition: all 0.3s ease-in-out;
+  color: #c4c4c4;
 }
 
 #focus .focus:hover .text .head h4:first-child {
@@ -925,6 +933,10 @@ h1:hover span {
   opacity: 1;
 }
 
+.events{
+  background-color: hsl(278, 17%, 10%);
+}
+
 /*--------------------------------------------------------------
 # Highlights
 --------------------------------------------------------------*/
@@ -933,13 +945,15 @@ h1:hover span {
 }
 #highlight {
   position: relative;
+  background-color:#18131B;
+  color:#d6d6d6;
 }
 
 #highlight::before {
   position: absolute;
   content: "";
   height: 100%;
-  background-color: #fff;
+  background-color: hsl(278, 21%, 14%);
   bottom: 0;
   right: 0;
   width: 30%;
@@ -958,7 +972,7 @@ h1:hover span {
   margin: 2rem 0rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  color: #000;
+  color: #fff;
 }
 
 #highlight .highlight-text ul li {
@@ -1028,16 +1042,16 @@ h1:hover span {
   margin: 1rem 0.5rem;
   margin-bottom: 0rem;
   padding: 0.5rem 1rem;
-  background: rgba(0, 0, 0, 0.05);
+  background: #503042;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 1.5rem rgba(255, 255, 255, 0.05);
+  /* box-shadow: 0 4px 1.5rem rgba(255, 255, 255, 0.05); */
   backdrop-filter: blur(0.5rem);
   border: 0.05rem solid rgba(0, 0, 0, 0.1);
 }
 
 .event-detail .the-detail i {
   font-size: 0.9rem;
-  color: #000;
+  color: white;
   margin-right: 1rem;
 }
 
@@ -1059,12 +1073,13 @@ h1:hover span {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: #fffafa;
+  background: #18131B;
+  color:white;
 }
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #545454;
+  color: #a5a5a5;
 }
 
 .about .content p:last-child {
