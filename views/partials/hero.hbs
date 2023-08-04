@@ -37,11 +37,7 @@ window.addEventListener("load", () => {
         let offset = window.pageYOffset;
         let amountScrolledByMouseWheel = offset - oldScroll;
         maxClientHeight = page.clientHeight;
-        page.scrollTop = offset * 2;
-        requestAnimationFrame(() => {
-            // change height of the page
-            page.style.height = `calc(100vh - ${offset * 1.6}px)`;
-        });
+        page.scrollTop = offset * 0.7;
     });
 });
 </script>

@@ -220,9 +220,6 @@ h1:hover span {
   max-height: 40px;
 }
 
-.scrolled-offset {
-  margin-top: 70px;
-}
 
 /*--------------------------------------------------------------
   # Navigation Menu
@@ -727,7 +724,7 @@ h1:hover span {
 .page {
   width: 100vw;
   height: 100vh;
-  perspective: 3px;
+  perspective: 5px;
   perspective-origin: center center;
   overflow: hidden;
 }
