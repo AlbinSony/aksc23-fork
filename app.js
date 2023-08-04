@@ -37,14 +37,6 @@ app.use(session({
     secret: process.env.SESSION_SECRET,
     cookie: {maxAge: parseInt(process.env.SESSION_MAX_AGE)},
     resave: true,
-    // store: MongoStore.create({
-    //     url: process.env.MONGO, ttl: 12 * 24 * 60 * 60, autoRemove: true
-    // }),
-    store: new MongoStore({
-        mongoUrl: process.env.MONGO,
-        ttl: 12 * 24 * 60 * 60,
-        autoRemove: true
-    }),
 
     saveUninitialized: false
 }))
