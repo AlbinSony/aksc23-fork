@@ -184,8 +184,7 @@ h1:hover span {
   z-index: 500;
   transition: all 0.5s;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  background-color: rgba(0,0,0,0.3);
-
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #header .logo h1 {
@@ -517,7 +516,12 @@ h1:hover span {
 .btn {
   position: relative;
   font-size: 1rem;
-  background: linear-gradient(to right, hsl(341, 74%, 35%), hsl(326, 78%, 25%), hsl(302, 38%, 20%));
+  background: linear-gradient(
+    to right,
+    hsl(341, 74%, 35%),
+    hsl(326, 78%, 25%),
+    hsl(302, 38%, 20%)
+  );
   color: #fff;
   border-radius: 0.4rem;
   font-weight: 400;
@@ -532,7 +536,12 @@ h1:hover span {
   inset: 0;
   border-radius: 0.4rem;
   padding: 0.15rem;
-  background:  linear-gradient(to right, hsl(341, 74%, 30%), hsl(326, 78%, 20%), hsl(302, 38%, 15%));
+  background: linear-gradient(
+    to right,
+    hsl(341, 74%, 30%),
+    hsl(326, 78%, 20%),
+    hsl(302, 38%, 15%)
+  );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -544,7 +553,12 @@ h1:hover span {
   height: 100%;
   inset: 0;
   border-radius: 0.5rem;
-  background-image:  linear-gradient(to right, hsl(341, 74%, 35%), hsl(326, 78%, 25%), hsl(302, 38%, 20%));;
+  background-image: linear-gradient(
+    to right,
+    hsl(341, 74%, 35%),
+    hsl(326, 78%, 25%),
+    hsl(302, 38%, 20%)
+  );
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -619,7 +633,7 @@ h1:hover span {
   margin: -2.5rem 0 0 -2.5rem;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #1089ff;
+  border-top-color: #801336;
   -webkit-animation: spin 1.7s linear infinite;
   animation: spin 1.7s linear infinite;
   z-index: 998;
@@ -634,7 +648,7 @@ h1:hover span {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #4b9ef1;
+  border-top-color: #EE4540;
   -webkit-animation: spin-reverse 0.6s linear infinite;
   animation: spin-reverse 0.6s linear infinite;
 }
@@ -648,7 +662,7 @@ h1:hover span {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #e5e5e5;
+  border-top-color: #FFC700;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
 }
@@ -690,7 +704,7 @@ h1:hover span {
   top: 0;
   width: 51%;
   height: 100%;
-  background: #1f2b38;
+  background: #18131B;
   z-index: 10;
 }
 
@@ -865,7 +879,14 @@ h1:hover span {
   opacity: 0;
   border-radius: 1rem;
   padding: 0.2rem;
-  background: linear-gradient(to right, #ffc700, #ee4540, #801336);
+  background: linear-gradient(
+    270deg,
+    #f9f871 0%,
+    #f4b45e 52.6%,
+    #cf7a5f 91.67%,
+    #935059 100%
+  );
+
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -906,7 +927,14 @@ h1:hover span {
   font-weight: 700;
   top: 0;
   opacity: 0;
-  background: linear-gradient(to right, #ffc700, #ee4540, #801336);
+  background: linear-gradient(
+    270deg,
+    #f9f871 0%,
+    #f4b45e 52.6%,
+    #cf7a5f 91.67%,
+    #935059 100%
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -933,7 +961,7 @@ h1:hover span {
   opacity: 1;
 }
 
-.events{
+.events {
   background-color: hsl(278, 17%, 10%);
 }
 
@@ -941,12 +969,12 @@ h1:hover span {
 # Highlights
 --------------------------------------------------------------*/
 #highlight * {
-  transition : all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 #highlight {
   position: relative;
-  background-color:#18131B;
-  color:#d6d6d6;
+  background-color: #18131b;
+  color: #d6d6d6;
 }
 
 #highlight::before {
@@ -1073,8 +1101,8 @@ h1:hover span {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #18131B;
-  color:white;
+  background: #18131b;
+  color: white;
 }
 .about .content h3 {
   font-weight: 600;
@@ -2690,7 +2718,7 @@ h1:hover span {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -2765,7 +2793,7 @@ h1:hover span {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -2823,21 +2851,21 @@ h1:hover span {
 
 @media screen and (max-width: 480px) {
   #footer .footer-top {
-      padding: 3rem 2rem;
+    padding: 3rem 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   #footer .credits .text {
-      text-align: center;
-      margin: 0rem;
-      padding: 0.5rem 0rem;
+    text-align: center;
+    margin: 0rem;
+    padding: 0.5rem 0rem;
   }
 
   #footer .credits .social-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem;
   }
 }
