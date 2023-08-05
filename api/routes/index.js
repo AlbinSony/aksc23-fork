@@ -12,6 +12,32 @@ router.get("/", function (req, res, next) {
     });
 });
 
+router.get("/signup",function(req, res){
+    res.render('pages/signup',{
+        title: "Signup",
+    })
+})
+router.get("/login",function(req, res){
+    res.render('pages/login',{
+        title: "Login",
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BACKEND API ROUTES
+
 router.post("/register",Auth.register);
 
 router.post('/login',passport.authenticate('local-login'),(req, res, next) => {
