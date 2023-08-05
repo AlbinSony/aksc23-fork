@@ -8,7 +8,7 @@ const next= require('next')
 /* GET home page. */
 router.get("/", function (req, res, next) {
     res.render("index", {
-        title: "IEEE LINK - Local Integrated Network of Kerala",
+        title: "AKSC'23 - All Kerala Students Congress 2023",
     });
 });
 
