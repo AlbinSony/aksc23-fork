@@ -22,7 +22,11 @@ router.get("/login",function(req, res){
         title: "Login",
     })
 })
-
+router.get("/register",function(req, res){
+    res.render('pages/register',{
+        title: "Register",
+    })
+})
 
 
 
